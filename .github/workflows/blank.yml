@@ -43,8 +43,8 @@ jobs:
         echo "" >> android/app/build.gradle
         echo "android {" >> android/app/build.gradle
         echo "    defaultConfig {" >> android/app/build.gradle
-        echo "        versionCode 4" >> android/app/build.gradle
-        echo "        versionName \"1.3\"" >> android/app/build.gradle
+        echo "        versionCode 5" >> android/app/build.gradle
+        echo "        versionName \"1.4\"" >> android/app/build.gradle
         echo "    }" >> android/app/build.gradle
         echo "    signingConfigs {" >> android/app/build.gradle
         echo "        release {" >> android/app/build.gradle
