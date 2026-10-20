@@ -8,6 +8,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './'),
+      // التوجيه الآمن لمنع خطأ الـ AsyncLocalStorage في بيئة الهاتف
+      'node:async_hooks': path.resolve(__dirname, './src/async-local-storage.ts'),
     },
   },
   build: {
