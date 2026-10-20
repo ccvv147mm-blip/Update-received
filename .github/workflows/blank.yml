@@ -38,11 +38,12 @@ jobs:
         mkdir -p android/app
         cp keystore.jks android/app/keystore.jks
 
-    - name: Configure Signing and Version Code in build.gradle
+    - name: Configure Signing, Package ID and Version in build.gradle
       run: |
         echo "" >> android/app/build.gradle
         echo "android {" >> android/app/build.gradle
         echo "    defaultConfig {" >> android/app/build.gradle
+        echo "        applicationId \"com.wasl.receipt\"" >> android/app/build.gradle
         echo "        versionCode 5" >> android/app/build.gradle
         echo "        versionName \"1.4\"" >> android/app/build.gradle
         echo "    }" >> android/app/build.gradle
