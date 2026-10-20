@@ -4,4 +4,8 @@ export async function generateAIContent(prompt: string) {
   };
 }
 
+export async function rankFeed(data: any) {
+  return data || [];
+}
+
 export default generateAIContent;
