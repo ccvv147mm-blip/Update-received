@@ -9,6 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './'),
+      'node:async_hooks': path.resolve(__dirname, './src/async-local-storage.ts'),
     },
   },
   build: {
