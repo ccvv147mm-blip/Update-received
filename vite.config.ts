@@ -3,12 +3,11 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 
 export default defineConfig({
-  base: './', 
-  root: './',
+  base: './',
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './'),
+      '@': path.resolve(__dirname, '.'),
       'node:async_hooks': path.resolve(__dirname, './src/async-local-storage.ts'),
     },
   },
