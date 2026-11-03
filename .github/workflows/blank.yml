@@ -28,8 +28,9 @@ jobs:
         npm install
         npm run build
 
-    - name: Sync Capacitor Android
+    - name: Add Android Platform and Sync
       run: |
+        npx cap add android
         npx cap sync android
 
     - name: Copy Keystore to Android App Folder
