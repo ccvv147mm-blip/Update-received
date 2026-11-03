@@ -44,9 +44,9 @@ jobs:
         echo "" >> android/app/build.gradle
         echo "android {" >> android/app/build.gradle
         echo "    defaultConfig {" >> android/app/build.gradle
-        echo "        applicationId \"com.wasl.receipt\"" >> android/app/build.gradle
-        echo "        versionCode 9" >> android/app/build.gradle
-        echo "        versionName \"1.8\"" >> android/app/build.gradle
+        echo "        applicationId 'com.wasl.receipt'" >> android/app/build.gradle
+        echo "        versionCode 10" >> android/app/build.gradle
+        echo "        versionName '1.0.1'" >> android/app/build.gradle
         echo "    }" >> android/app/build.gradle
         echo "    signingConfigs {" >> android/app/build.gradle
         echo "        release {" >> android/app/build.gradle
