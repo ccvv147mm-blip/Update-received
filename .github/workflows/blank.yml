@@ -45,8 +45,8 @@ jobs:
         echo "android {" >> android/app/build.gradle
         echo "    defaultConfig {" >> android/app/build.gradle
         echo "        applicationId 'com.wasl.receipt'" >> android/app/build.gradle
-        echo "        versionCode 10" >> android/app/build.gradle
-        echo "        versionName '1.0.1'" >> android/app/build.gradle
+        echo "        versionCode 11" >> android/app/build.gradle
+        echo "        versionName '1.0.2'" >> android/app/build.gradle
         echo "    }" >> android/app/build.gradle
         echo "    signingConfigs {" >> android/app/build.gradle
         echo "        release {" >> android/app/build.gradle
@@ -63,15 +63,15 @@ jobs:
         echo "    }" >> android/app/build.gradle
         echo "}" >> android/app/build.gradle
 
-    - name: Build Signed AAB
+    - name: Build Signed APK
       run: |
         cd android
         chmod +x gradlew
-        ./gradlew bundleRelease
+        ./gradlew assembleRelease
 
-    - name: Upload Artifacts (AAB)
+    - name: Upload Artifacts (APK)
       uses: actions/upload-artifact@v4
       with:
-        name: release-outputs
+        name: release-outputs-apk
         path: |
-          android/app/build/outputs/bundle/release/app-release.aab
+          android/app/build/outputs/apk/release/app-release.apk
