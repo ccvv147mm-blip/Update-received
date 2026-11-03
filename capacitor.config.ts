@@ -5,11 +5,8 @@ const config: CapacitorConfig = {
   appName: 'وَصْلُ',
   webDir: 'dist',
   bundledWebRuntime: false,
-  server: {
-    androidScheme: 'https'
-  },
   android: {
-    allowMixedContent: false,
+    allowMixedContent: true,
     captureInput: true,
     webContentsDebuggingEnabled: true
   },
