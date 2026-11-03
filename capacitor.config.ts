@@ -5,6 +5,9 @@ const config: CapacitorConfig = {
   appName: 'وَصْلُ',
   webDir: 'dist',
   bundledWebRuntime: false,
+  server: {
+    androidScheme: 'https'
+  },
   android: {
     allowMixedContent: false,
     captureInput: true,
@@ -13,12 +16,12 @@ const config: CapacitorConfig = {
   plugins: {
     SplashScreen: {
       launchShowDuration: 1000,
-      backgroundColor: '#0f172a',
+      backgroundColor: '#07172a',
       showSpinner: false
     },
     StatusBar: {
       style: 'DARK',
-      backgroundColor: '#0f172a',
+      backgroundColor: '#07172a',
       overlaysWebView: true
     }
   }
